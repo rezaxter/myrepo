@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        Prints(7);
+ 
+         function Prints(n) {
+                var no = ~~(n / 2)+1;
+               
+                var count = 1;
+                for (var i = 1; i <= 2 * no; i++)
+                {
+                    for (var j = count; j <= no; j++)
+                    {
+                        document.write("&nbsp;&nbsp;&nbsp;");
+                    }
+                    for (var k = 1; k <= count * 2 - 1; k++)
+                    {
+                        document.write("* ");
+                    }
+                    if (i < no)
+                        count++;
+                    else if (i > no)
+                        count--;
+                        document.write("</br>");
+                }
+            } 
+
+ 
+    </script>
+</head>
+<body>
+  
+</body>
+</html>

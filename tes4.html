@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        Prints(25);
+ 
+       function Prints(batas) {
+            var n1 = 0, n2 = 1, n3 = 0, i, count = 100;
+            document.write(n2 +"</br>");//printing 0 and 1  
+
+            for (i = 2; i < count; ++i)//loop starts from 2 because 0 and 1 are already printed  
+            {
+
+                n3 = n1 + n2;
+                if (n3 <= batas) {
+
+
+                    document.write(" " + n3);
+
+                    n1 = n2;
+                    n2 = n3;
+                }
+
+                document.write("</br>");
+            }
+        }
+
+ 
+    </script>
+</head>
+<body>
+  
+</body>
+</html>
